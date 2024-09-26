@@ -26,7 +26,7 @@ trees_data = []
 tab_links = driver.find_elements(By.CSS_SELECTOR, 'ul.nav-tabs li a')
 
 # Loop through each tab to activate it
-for i in range(1):
+for i in range(len(tab_links)):
         tab_links = driver.find_elements(By.CSS_SELECTOR, 'ul.nav-tabs li a')
     # try:
         # Click each tab link to activate the respective tab-pane
@@ -73,10 +73,14 @@ for i in range(1):
 
                 imageLink = soup.find("a", {"class": "featured_link fancybox"})
 
-                if (imageLink):
+                try:
+                    imageLink = soup.find("a", {"class": "featured_link fancybox"})
                     image = "https://www.nycgovparks.org" + imageLink['href']
-                else:
+                except(TypeError, KeyError) as e:
+                    # Token not found. Replace 'pass' with additional logic.
                     image = ""
+                    pass
+
 
                 comments = soup.findAll(text=lambda text:isinstance(text, Comment))
 
