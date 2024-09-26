@@ -16,7 +16,7 @@ The following **required** functionality is completed:
 - [x] **The web app displays a title**
 - [x] **The web app displays at least five list items, each with at least three attributes (such as title, text, and image url)**
 - [x] **The user can click on each item in the list to see a detailed view of it, including all database fields**
-  - [ ] _Note: When showing this feature in the video walkthrough, please show the unique URL for each detailed view. We will not be able to give points if we cannot see the implementation_
+  - [x] _Note: When showing this feature in the video walkthrough, please show the unique URL for each detailed view. We will not be able to give points if we cannot see the implementation_
 - [x] **The web app serves an appropriate 404 page when no matching route is defined**
 - [x] **The web app is appropriately styled using Picocss**
 
@@ -34,7 +34,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='/client/public/greattreesofbrooklyn-ezgif.com-video-to-gif-converter.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='/client/public/videoTour.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Notes
 
