@@ -8,7 +8,7 @@ Root Styles CSS :root {
 .header-container {
   overflow: hidden;
   padding: 20px 10px;
-  padding-bottom: 60px;
+  padding-bottom: 10px;
 }
 
 .header-left {
@@ -36,6 +36,10 @@ Root Styles CSS :root {
 .header-right button {
   cursor: pointer;
   touch-action: manipulation;
+}
+
+#searchWrapper {
+  padding-bottom: 20px;
 }
 
 main {

@@ -1,4 +1,5 @@
 import express from "express";
+import "./config/dotenv.js";
 import treesRouter from "./routes/trees.js";
 
 const app = express();

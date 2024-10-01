@@ -1,12 +1,29 @@
-const renderTrees = async () => {
+const searchBar = document.getElementById("searchBar");
+let data = [];
+
+searchBar.addEventListener("keyup", (e) => {
+  const searchString = e.target.value.toLowerCase();
+  const filteredData = data.filter((tree) => {
+    return (
+      tree.name.toLowerCase().includes(searchString) ||
+      tree.latinname.toLowerCase().includes(searchString)
+    );
+  });
+  renderTrees(filteredData);
+});
+
+const loadTrees = async () => {
   const response = await fetch("/trees");
+  data = await response.json();
+  renderTrees(data);
+};
 
-  const data = await response.json();
-
+const renderTrees = (trees) => {
   const mainContent = document.getElementById("main-content");
-
-  if (data) {
-    data.map((tree) => {
+  mainContent.innerHTML = "";
+  console.log("trees", trees);
+  if (trees) {
+    trees.map((tree) => {
       const card = document.createElement("div");
       card.classList.add("card");
 
@@ -22,7 +39,7 @@ const renderTrees = async () => {
       bottomContainer.appendChild(treeTitle);
 
       const latinName = document.createElement("p");
-      latinName.textContent = `(${tree.latinName})`;
+      latinName.textContent = `(${tree.latinname})`;
       bottomContainer.appendChild(latinName);
 
       const link = document.createElement("a");
@@ -48,5 +65,5 @@ const requestedURL = window.location.href.split("/").pop();
 if (requestedURL) {
   window.location.href = "../404.html";
 } else {
-  renderTrees();
+  loadTrees();
 }

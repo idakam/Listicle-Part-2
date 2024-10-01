@@ -16,17 +16,17 @@ const renderTree = async () => {
       document.getElementById("name").textContent = tree.name;
 
       document.getElementById("image").src = tree.image;
-      document.getElementById("latinName").textContent =
-        "Latin Name: " + tree.latinName;
+      document.getElementById("latinName").textontent =
+        "Latin Name: " + tree.latinname;
       document.getElementById("description").textContent = tree.description;
       document.getElementById("height").textContent =
         "Height: " + tree.height + " feet";
       document.getElementById("trunkDiameter").textContent =
-        "Trunk Diameter: " + tree.trunkDiameter + " inches";
+        "Trunk Diameter: " + tree.trunkdiameter + " inches";
       document.getElementById("canopySpread").textContent =
-        "Average Canopy Spread: " + tree.canopySpread + " feet";
+        "Average Canopy Spread: " + tree.canopyspread + " feet";
       document.getElementById("AFAPoints").textContent =
-        "AFA Points: " + tree.AFAPoints;
+        "AFA Points: " + tree.afapoints;
 
       document.getElementById("location").textContent =
         "Location: " + tree.location;
