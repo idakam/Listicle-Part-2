@@ -1,10 +1,10 @@
-# WEB103 Project 1 - Great Trees of NY Database
+# WEB103 Project 2 - Great Trees of NY Database
 
-Submitted by: Ida Kamali
+Submitted by: **Ida Kamali**
 
-About this web app: Website that features every tree on the "Great Trees of NY Database". The data is scraped from the NYC Parks website.
+About this web app: **Website that features every tree on the "Great Trees of NY Database" and allows a user to filter through the trees. The data is scraped from the NYC Parks website.**
 
-Time spent: 10 hours
+Time spent: **4** hours
 
 ## Required Features
 
@@ -13,16 +13,13 @@ The following **required** functionality is completed:
 <!-- Make sure to check off completed functionality below -->
 
 - [x] **The web app uses only HTML, CSS, and JavaScript without a frontend framework**
-- [x] **The web app displays a title**
-- [x] **The web app displays at least five list items, each with at least three attributes (such as title, text, and image url)**
-- [x] **The user can click on each item in the list to see a detailed view of it, including all database fields**
-  - [x] _Note: When showing this feature in the video walkthrough, please show the unique URL for each detailed view. We will not be able to give points if we cannot see the implementation_
-- [x] **The web app serves an appropriate 404 page when no matching route is defined**
-- [x] **The web app is appropriately styled using Picocss**
+- [x] **The web app is connected to a PostgreSQL database, with an appropriately structured database table for the list items**
+- [x] **The PostgreSQL database includes a table that matches the data displayed in the web app**
+  - [x] **NOTE: Your GIF or a screenshot added to the README must include a view of your Railway database that shows the contents of the table used by your app**
 
 The following **optional** features are implemented:
 
-- [x] The web app displays items in a unique format, such as cards rather than lists
+- [x] The user can search for items with a specific attribute
 
 The following **additional** features are implemented:
 
@@ -30,21 +27,26 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-\*\*Note: please be sure to
-
 Here's a walkthrough of implemented required features:
 
-<img src='/client/public/videoTour.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./client/public/videoTour.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<!-- Replace this with whatever GIF tool you used! -->
+
+GIF created with ... GIF tool here
+
+<!-- Recommended tools:
+[Kap](https://getkap.co/) for macOS
+[ScreenToGif](https://www.screentogif.com/) for Windows
+[peek](https://github.com/phw/peek) for Linux. -->
 
 ## Notes
 
 Describe any challenges encountered while building the app or any additional context you'd like to add.
 
-I find PicoCSS a bit difficult to use and limiting. I perfer to build an application with just raw css and html as it is less limiting than PicoCSS.
-
 ## License
 
-Copyright [2024] [Ida Kamali]
+Copyright [yyyy] [name of copyright owner]
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
